@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#gameCanvas {
+    display: block;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+}
+
+#score, #lives {
+    position: absolute;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+#lives {
+    right: 10px;
+    left: auto;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    display: none;
+    color: red;
+    z-index: 20;
+}
