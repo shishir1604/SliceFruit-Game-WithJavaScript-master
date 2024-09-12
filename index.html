@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="startScreen" class="screen">
+        <h1>Fruit Ninja</h1>
+        <button id="startButton">Start</button>
+    </div>
     <canvas id="gameCanvas"></canvas>
     <div id="score">Score: 0</div>
     <div id="lives">Lives: 3</div>
-    <div id="gameOver">Game Over!</div>
+    <div id="endScreen" class="screen">
+        <div>Game Over!</div>
+        <div id="finalScore">Final Score: 0</div>
+        <button id="restartButton">Restart</button>
+    </div>
+    
     <script src="js/game.js"></script>
 </body>
 </html>

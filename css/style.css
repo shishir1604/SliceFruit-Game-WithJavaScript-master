@@ -1,25 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
     margin: 0;
     overflow: hidden;
-    background-color: #282c34;
-    font-family: Arial, sans-serif;
-    color: white;
+    background: linear-gradient(135deg, #0f0f0f, #2c2c2c);
+    font-family: 'Montserrat', sans-serif;
+    color: #e0e0e0;
     text-align: center;
 }
 
 #gameCanvas {
     display: block;
-    background-color: #000;
+    background-color: #1a1a1a;
     width: 100vw;
     height: 100vh;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 #score, #lives {
     position: absolute;
     top: 10px;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
     z-index: 10;
+    color: #e0e0e0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 #lives {
@@ -27,14 +33,38 @@ body {
     left: auto;
 }
 
-#gameOver {
+.screen {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 48px;
-    font-weight: bold;
-    display: none;
-    color: red;
+    font-size: 36px;
+    font-weight: 700;
     z-index: 20;
+    display: none;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    background: rgba(50, 50, 50, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 12px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #3b3b3b;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
